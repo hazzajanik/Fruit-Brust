@@ -4,16 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <!-- tailwind frame work link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-style{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-
+<body class="font-style">
+    <header class="container mx-auto px-4 lg:px-20">
+        <!-- Navbar section Start -->
+        <section class=" bg-red-500 h-24 items-center rounded-3xl  grid  my-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 ">
+            <div>
+                <ul class="menu grid grid-cols-4 text-white rounded-box">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    
+                  </ul>
+            </div>
+            <div>
+                <div class="flex gap-3 items-center justify-center">
+                    <img class="w-10 h-10" src="./images/logo.png" alt="">
+                    <h1 class=" text-white font-black">Fruit Burst</h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-2">
+                <input type="text" placeholder="Search here" class="input input-bordered h-10 rounded-3xl w-24 md:w-auto lg:w-[345px]"/>
+                <img class="relative left-[120px] top-[10px]" src="./images/Frame.png" alt="">
+            </div>
+        </section>
+        <!-- Navbar Section End -->
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
